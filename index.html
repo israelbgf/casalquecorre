@@ -7,40 +7,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casal Que Corre - Até que a chegada os separe</title>
     <meta name="description" content="Casal Que Corre"/>
+
+    <style>
+
+        .avatar-frame,.avatar-frame img{
+            width: 100px;
+            height: 100px;
+            -webkit-border-radius: 50px; /* Saf3+, Chrome */
+            border-radius: 50px; /* Opera 10.5, IE 9 */
+            /*-moz-border-radius: 30px;  Disabled for FF1+ */
+        }
+
+        .balao-bianca {
+            position: relative;
+            padding: 15px;
+            color: #333;
+            background: #eee;
+            /* css3 */
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        /* creates the triangle */
+        .balao-bianca:after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            border: 15px solid transparent;
+            border-bottom-color: #eee;
+            display: block;
+            width: 0px;
+            border-width: 0px 0px 30px 30px;
+        }
+
+        .balao-israel {
+            position: relative;
+            padding: 15px;
+            color: #333;
+            background: #eee;
+            /* css3 */
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        /* creates the triangle */
+        .balao-israel:after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 500px;
+            border: 15px solid transparent;
+            border-bottom-color: #eee;
+            display: block;
+            width: 0px;
+            border-width: 0px 40px 40px 0px;
+        }
+
+    </style>
 </head>
-<body class="container">
-<div class="row twelve columns" style="text-align: center; margin-top:70px; margin-bottom:50px;">
-    <h1>CqC</h1>
-
-    <h3>Casal Que Corre</h3>
-    <i></i>
-</div>
+<body style="background: linear-gradient(90deg, lightpink 50%, skyblue 50%);">
+<div class="container">
 
 
-<div id="timeline">
-    <div class="row">
-        <h5>
-            27 de Maio de 2015
-        </h5>
-    </div>
-    <div class="row">
-        <div class="six columns">
-            <h5>Bianca</h5>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.            </p>
+    <div id="timeline">
+        <div class="row">
+            <h5>
+                27 de Maio de 2015
+            </h5>
         </div>
-        <div class="six columns">a</div>
-    </div>
-    <div class="row">
-        <div class="six columns">a</div>
-        <div class="six columns">
-            <h5>Israel</h5>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.            </p>
+        <div class="row">
+            <div id="bianca">
+                <img style="float: left; margin-top: 20px" src="http://news.softpedia.com/images/news2/Woody-Allen-Is-Scarlet-Johansson-s-Stylist-2.jpg" class="avatar-frame">
+                <blockquote style="float: left; width: 50%; margin: 0; margin-left: 30px" class="balao-bianca">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </blockquote>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+            <div id="israel">
+                <img style="float: right; margin-top: 20px; margin-left: 50px" src="http://news.softpedia.com/images/news2/Woody-Allen-Is-Scarlet-Johansson-s-Stylist-2.jpg" class="avatar-frame">
+                <blockquote style="float: right; width: 50%; margin: 0; margin-left: 30px" class="balao-israel">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </blockquote>
+            </div>
         </div>
     </div>
+
 </div>
 
 </body>
