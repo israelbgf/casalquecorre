@@ -9,9 +9,8 @@ h5 {
 .avatar-frame,.avatar-frame img{
     width: 100px;
     height: 100px;
-    -webkit-border-radius: 50px; /* Saf3+, Chrome */
-    border-radius: 50px; /* Opera 10.5, IE 9 */
-    /*-moz-border-radius: 30px;  Disabled for FF1+ */
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
 }
 
 .balao-bianca {
@@ -43,7 +42,6 @@ h5 {
     padding: 15px;
     color: #333;
     background: #fff;
-    /* css3 */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -60,4 +58,24 @@ h5 {
     display: block;
     width: 0px;
     border-width: 0px 40px 40px 0px;
+}
+
+.footer {
+    background-color: white; margin-top: 100px; text-align: center; padding: 10px; font-size: 10px;
+}
+
+.logo {
+    background-color: white; text-align: center; padding: 10px; font-family: Lobster;
+}
+
+.titulo {
+    font-size: 50px
+}
+
+.subtitulo {
+    font-size: 30px
+}
+
+.background {
+    background: linear-gradient(90deg, lightpink 50%, skyblue 50%);
 }
