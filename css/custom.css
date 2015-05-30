@@ -5,3 +5,59 @@ p {
 h5 {
     text-align: center;
 }
+
+.avatar-frame,.avatar-frame img{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50px; /* Saf3+, Chrome */
+    border-radius: 50px; /* Opera 10.5, IE 9 */
+    /*-moz-border-radius: 30px;  Disabled for FF1+ */
+}
+
+.balao-bianca {
+    position: relative;
+    padding: 15px;
+    color: #333;
+    background: #fff;
+    /* css3 */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* creates the triangle */
+.balao-bianca:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    border: 15px solid transparent;
+    border-bottom-color: #fff;
+    display: block;
+    width: 0px;
+    border-width: 0px 0px 30px 30px;
+}
+
+.balao-israel {
+    position: relative;
+    padding: 15px;
+    color: #333;
+    background: #fff;
+    /* css3 */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* creates the triangle */
+.balao-israel:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 490px;
+    border: 15px solid transparent;
+    border-bottom-color: #fff;
+    display: block;
+    width: 0px;
+    border-width: 0px 40px 40px 0px;
+}
