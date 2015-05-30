@@ -79,3 +79,7 @@ h5 {
 .background {
     background: linear-gradient(90deg, lightpink 50%, skyblue 50%);
 }
+
+.borda {
+    border-style: solid; border-width: 4px; border-color: #fff
+}

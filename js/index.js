@@ -46,6 +46,7 @@ function gerarHtmlDoRelato(data, titulo, bianca, israel){
             </blockquote>
         </div>
         <div class="row" style="margin-top: 30px">
+            <img style="border-radius: 10px;" class="borda" src="img/corrida.png" width="280">
             <img style="float: right; margin-top: 20px; margin-left: 30px" src="img/israel_avatar.png" class="avatar-frame">
             <blockquote style="float: right; width: 50%; margin: 0; margin-left: 30px" class="balao-israel">
                 ${israel}
