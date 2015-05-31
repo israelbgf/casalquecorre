@@ -1,0 +1,65 @@
+.chat-bubble {
+    position:relative;
+    padding:15px;
+    color:#333;
+    background:#fff;
+    /* css3 */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+
+.chat-bubble.left {
+    margin-left:30px;
+}
+
+.chat-bubble.right {
+    margin-right:30px;
+}
+
+.chat-bubble:before {
+    content:"";
+    position:absolute;
+    bottom:-20px; /* value = - border-top-width - border-bottom-width */
+    left:40px; /* controls horizontal position */
+    border-width:20px 20px 0;
+    border-style:solid;
+    border-color:#fff transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+}
+
+.chat-bubble.left:before {
+    top:30px; /* controls vertical position */
+    bottom:auto;
+    left:-20px; /* value = - border-left-width - border-right-width */
+    border-width:15px 30px 15px 0;
+    border-color:transparent #fff;
+}
+
+.chat-bubble.left:after {
+    top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+    bottom:auto;
+    left:-21px; /* value = - border-left-width - border-right-width */
+    border-width:9px 21px 9px 0;
+    border-color:transparent #fff;
+}
+
+.chat-bubble.right:before {
+    top:30px; /* controls vertical position */
+    bottom:auto;
+    left:auto;
+    right:-20px; /* value = - border-left-width - border-right-width */
+    border-width:15px 0 15px 30px;
+    border-color:transparent #fff;
+}
+
+.chat-bubble.right:after {
+    top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+    bottom:auto;
+    left:auto;
+    right:-21px; /* value = - border-left-width - border-right-width */
+    border-width:9px 0 9px 21px;
+    border-color:transparent #fff;
+}
