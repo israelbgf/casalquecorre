@@ -1,7 +1,9 @@
+"use strict"
+
 $(function(){
     $.ajax({
         type:'GET',
-        url: 'relatos/relatos.html',
+        url: 'relatos/',
         success:parseArquivoDeRelatos
     })
 })

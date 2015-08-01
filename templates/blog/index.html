@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<html>
+<head>
+    <link href='//fonts.googleapis.com/css?family=Lobster|Raleway:400,00,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "css/skeleton.css" %}">
+    <link rel="stylesheet" href="{% static "css/custom.css" %}">
+    <link rel="stylesheet" href="{% static "css/chat-bubble.css" %}">
+    <title>Casal Que Corre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Um diário com os treinos e eventos de corrida que o casal Israel & Bianca participam."/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{% static "js/lib/browser.min.js" %}" charset="utf-8"></script>
+    <script type="text/babel" src="{% static "js/index.js" %}"></script>
+</head>
+<body class="background">
+<div class="logo">
+    <div class="titulo">Casal Que Corre</div>
+    <div class="subtitulo">&quot;Nas retas e nas subidas, at&eacute; que a morte os separe.&quot;</div>
+</div>
+<div id="timeline" class="container"></div>
+<div class="footer">
+    Um projeto feito com carinho, por um casal que n&atilde;o fica mais parado.
+</div>
+</body>
+</html>
