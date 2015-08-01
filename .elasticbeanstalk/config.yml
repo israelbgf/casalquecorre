@@ -1,0 +1,10 @@
+branch-defaults:
+  production:
+    environment: casalquecorre-prd
+global:
+  application_name: casalquecorre
+  default_ec2_keyname: aws-eb
+  default_platform: Python 2.7
+  default_region: sa-east-1
+  profile: eb-cli
+  sc: git
