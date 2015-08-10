@@ -1,9 +1,16 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from gateways.relato_gateway import RelatoGatewayArquivoTXT
 
-# Create your views here.
+
 def index(request):
-    return render(request, 'blog/index.html')
+    gateway = RelatoGatewayArquivoTXT(open('relatos/relatos.html'))
+    relatos = gateway.listar()
+
+    return render(request, 'blog/index.html', {
+        'relatos': relatos
+    })
+
 
 def relatos(request):
     return render(request, 'blog/relatos.html')
