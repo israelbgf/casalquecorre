@@ -10,7 +10,3 @@ def index(request):
     return render(request, 'blog/index.html', {
         'relatos': relatos
     })
-
-
-def relatos(request):
-    return render(request, 'blog/relatos.html')
